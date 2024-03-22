@@ -9,4 +9,8 @@ public class RetailSalesPerson : Salesman
     {
         Console.WriteLine(string.Format("Hi my name is {0}. I would recommend you to buy this pen!", this.FullName));
     }
+
+    public void Develop() {
+        Console.WriteLine("I develop myself by watching retail sales training videos.");
+    }
 }
