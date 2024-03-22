@@ -12,7 +12,11 @@ namespace OOP
             Console.WriteLine(erikTheSalesman.FullName);
             erikTheSalesman.Sell();
             erikTheSalesman.SellVirtual();
+            erikTheSalesman.Develop();
 
+            WebDeveloper mike = new WebDeveloper("Angular6");
+            mike.Code();
+            mike.Develop();
         }
     }
     
