@@ -22,28 +22,35 @@ namespace OOP
             // mike.Code(null, "HTML");
 
             // Dynamic Polymorphism using Abstract classes unifies related objects.
-            List<Salesman> salesmen = new List<Salesman>() { new CarSalesman("James", "Weaver"), new CarSalesman("Sue", "McGregor"), new RetailSalesPerson("Delores", "Kirby"), new OnlineMarketer("Steve", "Rogers")};
+            // List<Salesman> salesmen = new List<Salesman>() { new CarSalesman("James", "Weaver"), new CarSalesman("Sue", "McGregor"), new RetailSalesPerson("Delores", "Kirby"), new OnlineMarketer("Steve", "Rogers")};
 
-            foreach (var item in salesmen) {
-                ShowMeHowToSell(item);
-            }
+            // foreach (var item in salesmen) {
+            //     ShowMeHowToSell(item);
+            // }
 
-            // Dynamic Polymorphism using Interfaces can unify unrelated group of objects.
-            List<SelfDeveloping> selfDeveloping = new List<SelfDeveloping>() { new RetailSalesPerson("Delores", "Kirby"), new WebDeveloper("C#")};
+            // // Dynamic Polymorphism using Interfaces can unify unrelated group of objects.
+            // List<SelfDeveloping> selfDeveloping = new List<SelfDeveloping>() { new RetailSalesPerson("Delores", "Kirby"), new WebDeveloper("C#")};
 
-            foreach (var item in selfDeveloping) {
-                ShowMeHowYouSelfDevelop(item);
-            }
+            // foreach (var item in selfDeveloping) {
+            //     ShowMeHowYouSelfDevelop(item);
+            // }
+
+            // Implementing Encapsulation
+            RetailSalesPerson retailSalesPerson = new RetailSalesPerson("Steve", "Roger");
+            retailSalesPerson.Sell();
+
+            CarSalesman carSalesman = new CarSalesman("Mike", "Rogers");
+            carSalesman.Sell();
 
         }
 
-        static void ShowMeHowToSell(Salesman salesman) {
-          salesman.Sell();
-        }
+        // static void ShowMeHowToSell(Salesman salesman) {
+        //   salesman.Sell();
+        // }
 
-        static void ShowMeHowYouSelfDevelop(SelfDeveloping selfDeveloping) {
-          selfDeveloping.Develop();
-        }
+        // static void ShowMeHowYouSelfDevelop(SelfDeveloping selfDeveloping) {
+        //   selfDeveloping.Develop();
+        // }
     }
     
 }
