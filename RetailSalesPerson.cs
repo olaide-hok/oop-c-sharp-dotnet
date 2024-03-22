@@ -1,5 +1,5 @@
 using System;
-public class RetailSalesPerson : Salesman
+public class RetailSalesPerson : Salesman, SelfDeveloping
 {
     public RetailSalesPerson(string firstName, string lastName) : base(firstName, lastName)
     {
